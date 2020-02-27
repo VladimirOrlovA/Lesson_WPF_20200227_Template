@@ -59,7 +59,7 @@
                 Background="Transparent"
                 Style="{StaticResource tbxStyle}">
             
-            <TextBox Text="{TemplateBinding Text}"
+            <TextBox Text="{TemplateBinding Text}" 
                      VerticalAlignment="Center"
                      HorizontalAlignment="Center"
                      BorderBrush="Transparent"

@@ -1,0 +1,35 @@
+﻿<Window x:Class="Lesson_WPF_20200227.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lesson_WPF_20200227"
+        mc:Ignorable="d"
+        Title="Subject - Template" Height="450" Width="800">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources\template.xaml"/>
+                <ResourceDictionary Source="Resources\style.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    
+    <Grid>
+
+        <StackPanel VerticalAlignment="Center">
+        
+        <Button Content="Static Button"
+                FontSize="16"
+                Template="{StaticResource btnTemplate}"/>
+
+            <TextBox Text="Static TextBox" Template="{StaticResource tbxTemplate}"/>
+
+        </StackPanel>
+        
+        
+        <!--<Button Width="200" Height="50" Content="Static Button"
+                FontSize="25"
+                Style="{StaticResource btnBorderStyle}"/>-->
+    </Grid>
+</Window>
